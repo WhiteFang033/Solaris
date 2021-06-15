@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Nova Flat ;
+    src: url("NovaFlat-Regular.ttf");
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Nova Flat;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80");
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+ul{
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 480px;
+    text-align: center;
+}
+li a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 35px;
+    padding: 5px;
+    width: 180px;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: 0.6s ease;
+    
+}
+
+ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    margin-left: 67%;
+}
+
+header{
+  
+    color: white;
+    font-size: 60px;
+    margin-left: 67%;
+    margin-top: 60px;
+}
+p{
+  
+    color: white;
+    font-size: 40px;    
+    margin-top: 20px;
+    margin-left: 490px;
+}
+
+@media only screen and (max-device-width: 50rem)
+{
+    body{
+        background-image: url("https://wallpapercave.com/wp/wp4410825.jpg");
+        background-size: 120%;
+        position: fixed;
+        background-repeat: no-repeat;
+
+
+        
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+        margin-left: 35%;
+        margin-top: 20%;
+    }
+    
+    header{
+      
+        color: white;
+        font-size: 60px;
+        margin-left: 30%;
+        margin-top: 50px;
+    }
+    p{
+      
+        color: white;
+        font-size: 40px;    
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    
+ul{
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 15%;
+    margin-left: 50px;
+    text-align: center;
+}
+}

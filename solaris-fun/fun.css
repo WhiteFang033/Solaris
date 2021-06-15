@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400italic);
+@import url(https://fonts.googleapis.com/css?family=Megrim);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+div {
+  min-height: 100px;
+  height: 30vw;
+  text-align: center;
+  position: relative;
+  margin: 1vw 0;
+  z-index: 0;
+}
+body{
+  background-color:black;
+}
+
+div:nth-of-type(1) {
+  background: #000 center 40% no-repeat;
+  background-size: cover;
+}
+
+div:nth-of-type(2) {
+  background: goldenrod center 40% no-repeat;
+  background-size: cover;
+}
+
+div:nth-of-type(3) {
+  background: blue center 55% no-repeat;
+  background-size: cover;
+}
+
+div:nth-of-type(4) {
+  background: teal center 60% no-repeat;
+  background-size: cover;
+}
+
+div:nth-of-type(5) {
+  background: blanchedalmond center 60% no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 2%;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  max-width: 280px;
+  max-height: 60px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 1.3em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*=====OFFEST-COLOR====*/
+.offset-color {
+  font-family: 'Francois One', sans-serif;
+  border: 3px solid #f2f2f2;
+  font-size: 1.7em;
+  line-height: 1em;
+  color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.offset-color:after {
+  content: "";
+  display: block;
+  background: rgba(9, 94, 178, 0.8);
+  width: 102%;
+  height: 107%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0.1em;
+  left: -0.3em;
+  z-index: -1;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.offset-color:hover:after {
+  background: rgba(255, 133, 54, 0.8);
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/*=====SKEWED====*/
+.skewed {
+  font-size: 1.7em;
+  line-height: 0.2em;
+  font-family: 'Megrim', cursive;
+  color: #fff;
+  background: #C1572F;
+  border-top: 9px solid #C1572F;
+  border-bottom: 13px solid #C1572F;
+  border-left: 1px solid #C1572F;
+  border-right: 1px solid #C1572F;
+  -moz-transform: perspective(150px) rotateY(2deg) rotateX(-1deg) translateX(2%) translateZ(-1px) scale(1);
+  -ms-transform: perspective(150px) rotateY(2deg) rotateX(-1deg) translateX(2%) translateZ(-1px) scale(1);
+  -webkit-transform: perspective(150px) rotateY(2deg) rotateX(-1deg) translateX(2%) translateZ(-1px) scale(1);
+  transform: perspective(150px) rotateY(2deg) rotateX(-1deg) translateX(2%) translateZ(-1px) scale(1);
+}
+
+.skewed:before, .skewed:after {
+  content: "";
+  display: block;
+  width: 102%;
+  height: 107%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0.1em;
+  left: -0.3em;
+  z-index: -1;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.skewed:before {
+  background: #FFCB3A;
+  -moz-transform: perspective(500px) rotateY(5deg) rotateX(-3deg) translateX(2%) translateZ(-5px) scale(1.09);
+  -ms-transform: perspective(500px) rotateY(5deg) rotateX(-3deg) translateX(2%) translateZ(-5px) scale(1.09);
+  -webkit-transform: perspective(500px) rotateY(5deg) rotateX(-3deg) translateX(2%) translateZ(-5px) scale(1.09);
+  transform: perspective(500px) rotateY(5deg) rotateX(-3deg) translateX(2%) translateZ(-5px) scale(1.09);
+}
+
+.skewed:after {
+  background: #275D5B;
+  -moz-transform: perspective(410px) rotateY(-15deg) rotateX(2deg) translateX(4%) translateZ(20px) scale(1);
+  -ms-transform: perspective(410px) rotateY(-15deg) rotateX(2deg) translateX(4%) translateZ(20px) scale(1);
+  -webkit-transform: perspective(410px) rotateY(-15deg) rotateX(2deg) translateX(4%) translateZ(20px) scale(1);
+  transform: perspective(410px) rotateY(-15deg) rotateX(2deg) translateX(4%) translateZ(20px) scale(1);
+}
+
+.skewed:hover {
+  -moz-transform: perspective(100px) rotateY(3deg) rotateX(1deg) translateX(2%) translateZ(-1px) scale(1);
+  -ms-transform: perspective(100px) rotateY(3deg) rotateX(1deg) translateX(2%) translateZ(-1px) scale(1);
+  -webkit-transform: perspective(100px) rotateY(3deg) rotateX(1deg) translateX(2%) translateZ(-1px) scale(1);
+  transform: perspective(100px) rotateY(3deg) rotateX(1deg) translateX(2%) translateZ(-1px) scale(1);
+}
+
+.skewed:hover:before {
+  -moz-transform: perspective(130px) rotateY(-5deg) rotateX(3deg) translateX(-2%) translateZ(5px) scale(1.09);
+  -ms-transform: perspective(130px) rotateY(-5deg) rotateX(3deg) translateX(-2%) translateZ(5px) scale(1.09);
+  -webkit-transform: perspective(130px) rotateY(-5deg) rotateX(3deg) translateX(-2%) translateZ(5px) scale(1.09);
+  transform: perspective(130px) rotateY(-5deg) rotateX(3deg) translateX(-2%) translateZ(5px) scale(1.09);
+}
+
+.skewed:hover:after {
+  -moz-transform: perspective(380px) rotateY(5deg) rotateX(-3deg) translateX(3%) translateZ(-5px) scale(1.09);
+  -ms-transform: perspective(380px) rotateY(5deg) rotateX(-3deg) translateX(3%) translateZ(-5px) scale(1.09);
+  -webkit-transform: perspective(380px) rotateY(5deg) rotateX(-3deg) translateX(3%) translateZ(-5px) scale(1.09);
+  transform: perspective(380px) rotateY(5deg) rotateX(-3deg) translateX(3%) translateZ(-5px) scale(1.09);
+}
+
+/*=====OFFSET-BORDER====*/
+.offset-border {
+  color: #f2f2f2;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.offset-border:before, .offset-border:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 3px solid #f2f2f2;
+  z-index: -1;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.offset-border:before {
+  width: 100%;
+  height: 106%;
+  top: -7.5%;
+  right: 0;
+}
+
+.offset-border:after {
+  width: 105%;
+  height: 94%;
+  bottom: 0px;
+  left: -4%;
+}
+
+.offset-border:hover {
+  color: #323232;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.offset-border:hover:before, .offset-border:hover:after {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-color: #323232;
+}
+
+/*=====alignment===========*/
+.alignment {
+  font-family: 'Righteous', cursive;
+  background: #1acc9b;
+  font-size: 1.7em;
+  line-height: 0.9em;
+  color: #f2f2f2;
+  z-index: 1;
+  box-shadow: 7px -7px 0px #a017b2, -7px 7px 0px #ffc521;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.alignment:hover {
+  box-shadow: 0px 0px 0px #1acc9b, 0px 0px 0px #1acc9b;
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/*=====OFFSET-BORDER ROUNDED VERTION====*/
+.offset-border.rounded {
+  color: #B07418;
+}
+
+.offset-border.rounded:before, .offset-border.rounded:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 3px solid #656565;
+  border-radius: 10px;
+  z-index: -1;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.offset-border.rounded:hover {
+  color: #CBA135;
+}
+
+.offset-border.rounded:before {
+  border-color: #CBA135;
+}
+
+.offset-border.rounded:after {
+  border-color: #B07418;
+}
+
+.offset-border.rounded:hover:before, .offset-border.rounded:hover:after {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.offset-border.rounded:hover:before {
+  border-color: #B07418;
+}
+
+.offset-border.rounded:hover:after {
+  border-color: #CBA135;
+}
+
+/*=====OVERLAY====*/
+.overlay {
+  font-family: 'Francois One', sans-serif;
+  border: 4px solid #000;
+  font-size: 1.7em;
+  line-height: 1em;
+  color: #000;
+  background: #BF0426;
+  text-transform: uppercase;
+  padding-right: 4%;
+  line-height: 1.4em;
+}
+
+.overlay:after {
+  content: "";
+  display: block;
+  border: 4px solid #000;
+  background: #fff;
+  width: 102%;
+  height: 107%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8%;
+  left: -7%;
+  z-index: -2;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.overlay:hover {
+  background: #fff;
+  color: #fff;
+  -moz-transition: all ease-out;
+  -o-transition: all ease-out;
+  -webkit-transition: all ease-out;
+  transition: all ease-out;
+}
+
+.overlay:hover:after {
+  background: #BF0426;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+p{
+  font-size: 30px;
+  font-family: 'Megrim', cursive;
+  color: white;
+  margin-left: 70px;
+}
+
+
+heading{
+  font-size: 50px;
+  font-family: 'Francois One', sans-serif;
+  color: white;
+  margin-left: 560px;
+}
+
+heading :hover{
+
+  cursor: pointer;
+  color: #BF0426;
+  transition: 0.6s ease;
+}

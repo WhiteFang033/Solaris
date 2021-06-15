@@ -1,0 +1,328 @@
+/* Hides the horizontal overflow */
+@font-face {
+  font-family: Nova Flat;
+  src: url(NovaFlat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Dear Sans;
+  src: url(Dear\ Sans\ Condensed.otf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:Dear Sans;
+    font-weight: 300;
+}
+body {
+    overflow-x: hidden;
+  }
+  /* Resize in Mobile View */
+  
+  @media (min-width: 0) and (max-width: 767px) {
+    p, .body-text {
+      font-size: 10px !important;
+    }
+    .down-arrow {
+      font-size: 20px !important;
+    }
+  }
+  /* Resize in Tablet View */
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    p, .body-text {
+      font-size: 15px !important;
+    }
+    .down-arrow {
+      font-size: 30px !important;
+    }
+  }
+  /* Line Separators CSS */
+  
+  .line-separator {
+    display: block;
+    width: 50%;
+    height: 1px;
+    text-align: center;
+    margin: 20px auto;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 40px;
+  }
+  /* First Wrap Background */
+  
+  .first-wrap {
+    height: 100%;
+    width: 100vw;
+    background: #ffffff url("https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80") no-repeat fixed;
+     background-size: cover;
+     background-position: 50% 50%;
+  }
+  /* Second Wrap Background */
+  .Intro{
+      text-align: center;
+      color: white;
+  }
+  .second-wrap {
+    height: 100%;
+    width: 100vw;
+    background: #ffffff url("https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80") no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  /* Third Wrap Background */
+  
+  .third-wrap {
+    height: 100%;
+    width: 100vw;
+    background: #ffffff url("https://images.unsplash.com/photo-1559657693-e816ff3bd9af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751&q=80") no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .first-div {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+    
+    .first-inner-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      .down-arrow {
+        font-size: 40px;
+        color: #fff;
+      }
+      p {
+        padding: 20px;
+        letter-spacing: 0.45em;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  
+  .second-div {
+    display: table;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+    }
+  }
+  
+  .third-div {
+    display: table;
+    height: 50vh;
+    width: 100vw;
+    background-color: transparent;
+  }
+  
+  .fourth-div {
+    display: table;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+    }
+  }
+  
+  .fifth-div {
+    display: table;
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent;
+  }
+  
+  #back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+  }
+  
+  #back-to-top:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  
+  #back-to-top.show {
+    opacity: 1;
+  }
+  
+  
+  
+  /* NEW UPDATE */
+  .new-update {
+    padding: 20px;
+    text-align: center;
+    
+  }
+
+  ul{
+    position: fixed;
+    float: right;
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    margin-top: -35px;
+    margin-left: 750px;
+   
+  }
+  li{
+      display: inline-block;
+  }
+
+  .main{
+    width: 1700px;
+    height: 70px;
+    background-color: black;
+    position:fixed;
+    top: 0%;
+  }
+   
+  ul li a{
+    border-radius: 35px;
+    text-decoration:none;
+    color: #fff;
+    padding: 5px 20px;
+    
+    transition: 0.6s ease;
+}
+
+.Heading{
+    font-family: Nova Flat;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.logo img{
+    float: left;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.intro{
+  margin-top: 5%;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg,#ffffff 0%,#d7e1ec 100%  );
+
+
+
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.Name{
+  font-size: 150px;
+  font-family: Nova Flat;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg,#ffffff 5%,#d7e1ec 95%) ;
+
+
+
+
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+
+
+.content{
+
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.content1{
+  margin-left: 100px;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+ul:hover li a {
+  /*Scale makes text bigger*/
+  transform: scale(2);
+  opacity: .2;
+  filter: blur(5px);
+  color: black;
+
+}
+
+ul li a:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0)
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  
+  border-radius: 15px;
+  transition: transform 0.5s;
+  transform-origin: left;
+  /*Removed the color effect at this point*/
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+
+}
+
